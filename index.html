@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flag Guessing</title>
+</head>
+<body>
+
+    <div id="blur"></div>
+
+    <div id="menu">
+        <div>Flag Guessing Game!</div>
+        <button class="btn" id="start">Start</button>
+    </div>
+
+    <div id="game">
+        <div class="container">
+            <div class="flag" id="flag"></div>
+            <div class="answer-container">
+                <div class="answer"></div>
+                <div class="answer"></div>
+                <div class="answer"></div>
+                <div class="answer"></div>
+                <button class="btn" id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="errorModal">
+        <h3 class="errorTitle">Ops...</h3>
+        <p class="errorDesc">Please, select one option.</p>
+        <button class="btn" id="closeModal">OK</button>
+    </div>
+
+    <div id="gameOver">
+        <div>Game Over</div>
+        <div class="rightAnswers"></div>
+        <button class="btn" id="playAgain">Play again</button>
+    </div>
+
+    <div id="victory">You won! You named ALL countries.
+        <button class="btn" id="startOver">Start over</button>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
